@@ -35,6 +35,121 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+  #publications-list {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.publication-card {
+    background-color: #f9f9f9; /* Light grey background for cards */
+    border: 1px solid #0073e6; /* Thinner blue border */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.publication-image {
+    width: 150px; /* Increased width */
+    height: 150px; /* Increased height */
+    background-color: #e0e0e0; /* Placeholder background */
+    border-radius: 8px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.publication-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.publication-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.publication-card h2 {
+    font-size: 18px;
+    margin: 0 0 8px;
+    color: #0073e6; /* Blue color for publication title */
+    font-weight: 600;
+}
+
+.publication-card h2 a {
+    color: #0073e6; /* Blue color for links */
+    text-decoration: none;
+}
+
+.publication-card h2 a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.publication-card p {
+    font-size: 14px;
+    margin: 4px 0;
+    color: #333333; /* Black color for author names */
+    line-height: 1.6;
+}
+
+.publication-card .metadata {
+    font-size: 14px;
+    color: #333333; /* Dark text for conference/journal and year */
+    margin-top: 6px;
+}
+
+/* Hover effect */
+.publication-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #publications-list {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .publication-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publication-image {
+        width: 200px; /* Larger image size for mobile */
+        height: 200px; /* Larger image size for mobile */
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+
+    .publication-card h2 {
+        font-size: 16px;
+    }
+
+    .publication-card p {
+        font-size: 12px;
+    }
+
+    .publication-card .metadata {
+        font-size: 13px;
+    }
+}
+</style>
 </head>
 
 <body class="index-page">
@@ -52,7 +167,8 @@
         <ul>
           <li><a href="#home" class="active">Home<br></a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -177,7 +293,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -247,7 +363,86 @@
       </div>
 
     </section><!-- /Resume Section -->
+    
+    <section id="publications">
+      <h2>My Publications</h2>
+    <div id="publications-list"></div>
 
+    <script>
+        async function fetchPublications() {
+            try {
+                // Fetch the BibTeX file
+                const response = await fetch('assets/pub.bib');
+                
+                // Check if the response is ok
+                if (!response.ok) {
+                    throw new Error(`Failed to load pub.bib: ${response.status} ${response.statusText}`);
+                }
+
+                // Get the text from the response
+                const bibtex = await response.text();
+
+                // Log the raw bibtex content for debugging
+                console.log('BibTeX content:', bibtex);
+
+                // Parse and display publications
+                const publications = parseBibTeX(bibtex);
+                displayPublications(publications);
+            } catch (error) {
+                // Log detailed error message
+                console.error('Error fetching or parsing publications:', error.message);
+                document.getElementById('publications-list').innerText = `Failed to load publications: ${error.message}`;
+            }
+        }
+
+        function parseBibTeX(bibtex) {
+            const entries = [];
+            const entryRegex = /@.*?{(.*?),([\s\S]*?)}\s*$/gm;
+            let match;
+
+            while ((match = entryRegex.exec(bibtex)) !== null) {
+                const entry = { id: match[1].trim(), fields: {} };
+                const fields = match[2].trim().split(/,\s*\n/);
+
+                for (let field of fields) {
+                    const [key, value] = field.split('=');
+                    if (key && value) {
+                        entry.fields[key.trim()] = value.replace(/[{}"]/g, '').trim();
+                    }
+                }
+                entries.push(entry);
+            }
+            return entries;
+        }
+
+        function displayPublications(publications) {
+            const container = document.getElementById('publications-list');
+            
+            if (publications.length === 0) {
+                container.innerHTML = '<p>No publications found.</p>';
+                return;
+            }
+
+            container.innerHTML = publications.map(pub => `
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <!-- Using picture_path field from BibTeX; replace with actual image path if needed -->
+                        <img src="${pub.fields.picture_path || 'placeholder.png'}" alt="Publication Image">
+                    </div>
+                    <div class="publication-content">
+                        <h2><a href="${pub.fields.url || '#'}" target="_blank">${pub.fields.title || 'Unknown Title'}</a></h2>
+                        <p>${pub.fields.author || 'Unknown Authors'}</p>
+                        <p class="metadata">${pub.fields.journal || pub.fields.booktitle || 'Unknown Source'} - ${pub.fields.year || 'Unknown Year'}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Fetch and display publications on page load
+        fetchPublications();
+    </script>
+
+    </section>
     <!-- Services Section -->
     <section id="services" class="services section">
 
