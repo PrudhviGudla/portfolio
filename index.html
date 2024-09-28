@@ -27,129 +27,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-  <style>
-  #publications-list {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.publication-card {
-    background-color: #f9f9f9; /* Light grey background for cards */
-    border: 1px solid #0073e6; /* Thinner blue border */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-}
-
-.publication-image {
-    width: 150px; /* Increased width */
-    height: 150px; /* Increased height */
-    background-color: #e0e0e0; /* Placeholder background */
-    border-radius: 8px;
-    margin-right: 20px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.publication-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.publication-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-.publication-card h2 {
-    font-size: 18px;
-    margin: 0 0 8px;
-    color: #0073e6; /* Blue color for publication title */
-    font-weight: 600;
-}
-
-.publication-card h2 a {
-    color: #0073e6; /* Blue color for links */
-    text-decoration: none;
-}
-
-.publication-card h2 a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-.publication-card p {
-    font-size: 14px;
-    margin: 4px 0;
-    color: #333333; /* Black color for author names */
-    line-height: 1.6;
-}
-
-.publication-card .metadata {
-    font-size: 14px;
-    color: #333333; /* Dark text for conference/journal and year */
-    margin-top: 6px;
-}
-
-/* Hover effect */
-.publication-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-    #publications-list {
-        grid-template-columns: 1fr;
-        width: 95%;
-    }
-
-    .publication-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .publication-image {
-        width: 200px; /* Larger image size for mobile */
-        height: 200px; /* Larger image size for mobile */
-        margin-bottom: 12px;
-        margin-right: 0;
-    }
-
-    .publication-card h2 {
-        font-size: 16px;
-    }
-
-    .publication-card p {
-        font-size: 12px;
-    }
-
-    .publication-card .metadata {
-        font-size: 13px;
-    }
-}
-</style>
 </head>
 
 <body class="index-page">
@@ -167,31 +44,14 @@
         <ul>
           <li><a href="#home" class="active">Home<br></a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li><a href="#publications">Publications</a></li>
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#interests">Research Interests</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -230,41 +90,15 @@
             </div>
 
             <div class="skills-content skills-animation">
-
               <h5>Skills</h5>
-
-              <div class="progress">
-                <span class="skill"><span>Python</span> 
-                <!-- <i class="val">100%</i></span> -->
-                <!-- <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> -->
+              <div>
+                <p>
+                  <b>Programming Languages and Softwares:</b> C, C++, Matlab, Python, ROS, Docker
+                </p>
+                <p>
+                  <b>Libraries:</b> numpy, pandas, matplotlib, TensorFlow, Pytorch, Flower, Fast-API, PyMongo, SQLAlchemy, OpenCV, CBOR2
+                </p>
               </div>
-
-              <div class="progress">
-                <span class="skill"><span>ROS</span> 
-                <!-- <i class="val">90%</i></span> -->
-                <!-- <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> -->
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>C</span> 
-                <!-- <i class="val">75%</i></span> -->
-                <!-- <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> -->
-              </div>
-
-              <!-- <div class="progress">
-                <span class="skill"><span>Photoshop</span> 
-                <!-- <i class="val">55%</i></span> -->
-                <!-- <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> 
-              </div> -->
-
             </div>
           </div>
 
@@ -273,16 +107,13 @@
               <h4>About me</h4>
               <p>
                 I am an aspiring undergraduate researcher from the Indian Institute of Technology Kharagpur interested in AI, Robotics, and IoT. As the Project Lead for Steel Eye, I developed a real-time ladle tracking system for steel plants and led a team to the national finals of the Smart India Hackathon 2023. I’ve contributed to research with publications in areas like Entity Augmentation in Vertical Federated Learning and Data Compression for the Constrained Web of Things.
-
-                </p>
+              </p>
               <p>
                 I am an enterprising engineer with a strong passion for continuous learning. I actively explore emerging technologies by reading research papers, and blogs, and staying updated on advancements in IoT, reinforcement learning, robotics, computer vision, and brain-computer interfaces (BCI). My drive to learn and adapt enables me to bring innovative solutions to the projects I lead and collaborate on.
               </p>
-
             </div>
           </div>
         </div>
-
       </div>
 
     </section><!-- /About Section -->
@@ -293,7 +124,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -301,161 +131,173 @@
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 class="resume-title">Academic Service Experience</h3>
 
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
+              <h4>Reviewer, ICLR 2025</h4>
+              <h5>Sept 2024 - Present</h5>
+              <p>Review research papers for one of the leading conferences in machine learning and artificial intelligence</p>
             </div><!-- Edn Resume Item -->
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title">Experience</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+              <h4>
+                Charpak Lab Scholar</h4>
+              <h5>May 2024 - Present</h5>
+              <p><em>Laboratoire Hubert Curien, Universite Jean Monnet</em></p>
+              <p><ul>
+                <li>Have been awarded the prestigious Charapak Lab Scholarship by the French Insititute in India (IFI) for the internship</li>
+                <li>Worked on the Constrained Semantic Web of Things project funded by the French National Research Agency (ANR)</li>
+                <li>Engineered a State-of-the-art compression algorithm for JSON-LD data that provides savings of up to 95.1% in terms of network overhead</li>
+                <li>Developed a Python library to facilitate efficient encoding and decoding of JSON-LD data using our novel compression algorithm</li>
+              </ul>  
+              </p>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+              <h4>Mechatronics and Vision Team Lead</h4>
+              <h5>Jul 2022 - Present</h5>
+              <p><em>Autonomous Ground Vehicle Research Group</em></p>
+              <p><ul>
+                <li>Engineered a novel entity augmentation technique for Vertical Federated Learning (VFL) without requiring explicit entity alignment</li>
+                <li>Our technique achieved 69.5% accuracy on the CIFAR10 dataset with 5% entity alignment, notably outperforming traditional VFL methods</li>
+              </ul>  
+              </p>
             </div><!-- Edn Resume Item -->
-
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
+            <!-- <h5>  </h5> -->
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
+              <h4>
+                Project Lead, Steel Eye - Real-Time Ladle Tracking System for Steel Plants</h4>
+              <h5>Jan 2024 - Present</h5>
+              <p><em>Smart Wireless Applications & Networking (SWAN) Lab, IIT Kharagpur</em></p>
+              <p><ul>
+                <li>Built an end-to-end Ladle Tracking System that automates ladle number detection in steel plants using a fine-tuned YOLOv8 model</li>
+                <li>Developed a FastAPI web application integrated with a MySQL database, offering real-time analytics and insights to industry personnel</li>
+                <li>Have been awarded the <em>AI4ICPS Chanakya Fellowship</em> for the project</li>
+                <li>Leading the development of a wireless mesh network using multiple Raspberry Pi devices to build a distributed edge computing cluster</li>
+              </ul>  
+              </p>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
+              <h4>Founding Member</h4>
+              <h5>Jan 2024 - Present</h5>
+              <p><em>Student Satellite Program IIT Kharagpur</em></p>
+              <p><ul>
+                <li>Executed a pivotal role in the CubeSat design and overseeing sensor-related tests as a member of the Electrical Subsystem</li>
+                <li>Built a communication system utilizing a LoRA RFM95W with a spring antenna on the satellite and a Yagi antenna for the ground station</li>
+              </ul>  
+              </p>
             </div><!-- Edn Resume Item -->
-
           </div>
-
+          <!-- Download CV Button -->
+          <div class="col-lg-12 text-center">
+            <a href="assets/cv/cv1.pdf" class="btn btn-primary download-btn" download="Prudhvi_Gudla_CV.pdf">
+              <i class="fa fa-download"></i> Download CV
+            </a>
+          </div>
         </div>
-
       </div>
 
     </section><!-- /Resume Section -->
     
     <section id="publications">
+    <div class="container section-title" data-aos="fade-up">
       <h2>My Publications</h2>
-    <div id="publications-list"></div>
+    </div><!-- End Section Title -->
+    <div id="publications-list" class="d-flex flex-column align-items-center justify-content-center text-center">
+          <!-- </div> -->
 
+    <!-- <div class="align-items-center"> -->
     <script>
-        async function fetchPublications() {
-            try {
-                // Fetch the BibTeX file
-                const response = await fetch('assets/pub.bib');
-                
-                // Check if the response is ok
-                if (!response.ok) {
-                    throw new Error(`Failed to load pub.bib: ${response.status} ${response.statusText}`);
-                }
+      async function fetchPublications() {
+          try {
+              // Fetch the BibTeX file
+              const response = await fetch('assets/pub.bib');
+              
+              // Check if the response is ok
+              if (!response.ok) {
+                  throw new Error(`Failed to load pub.bib: ${response.status} ${response.statusText}`);
+              }
 
-                // Get the text from the response
-                const bibtex = await response.text();
+              // Get the text from the response
+              const bibtex = await response.text();
 
-                // Log the raw bibtex content for debugging
-                console.log('BibTeX content:', bibtex);
+              // Log the raw bibtex content for debugging
+              console.log('BibTeX content:', bibtex);
 
-                // Parse and display publications
-                const publications = parseBibTeX(bibtex);
-                displayPublications(publications);
-            } catch (error) {
-                // Log detailed error message
-                console.error('Error fetching or parsing publications:', error.message);
-                document.getElementById('publications-list').innerText = `Failed to load publications: ${error.message}`;
-            }
-        }
+              // Parse and display publications
+              const publications = parseBibTeX(bibtex);
+              displayPublications(publications);
+          } catch (error) {
+              // Log detailed error message
+              console.error('Error fetching or parsing publications:', error.message);
+              document.getElementById('publications-list').innerText = `Failed to load publications: ${error.message}`;
+          }
+      }
 
-        function parseBibTeX(bibtex) {
-            const entries = [];
-            const entryRegex = /@.*?{(.*?),([\s\S]*?)}\s*$/gm;
-            let match;
+      function parseBibTeX(bibtex) {
+          const entries = [];
+          const entryRegex = /@.*?{(.*?),([\s\S]*?)}\s*$/gm;
+          let match;
 
-            while ((match = entryRegex.exec(bibtex)) !== null) {
-                const entry = { id: match[1].trim(), fields: {} };
-                const fields = match[2].trim().split(/,\s*\n/);
+          while ((match = entryRegex.exec(bibtex)) !== null) {
+              const entry = { id: match[1].trim(), fields: {} };
+              const fields = match[2].trim().split(/,\s*\n/);
 
-                for (let field of fields) {
-                    const [key, value] = field.split('=');
-                    if (key && value) {
-                        entry.fields[key.trim()] = value.replace(/[{}"]/g, '').trim();
-                    }
-                }
-                entries.push(entry);
-            }
-            return entries;
-        }
+              for (let field of fields) {
+                  const [key, value] = field.split('=');
+                  if (key && value) {
+                      entry.fields[key.trim()] = value.replace(/[{}"]/g, '').trim();
+                  }
+              }
+              entries.push(entry);
+          }
+          return entries;
+      }
 
-        function displayPublications(publications) {
-            const container = document.getElementById('publications-list');
-            
-            if (publications.length === 0) {
-                container.innerHTML = '<p>No publications found.</p>';
-                return;
-            }
+      function displayPublications(publications) {
+          const container = document.getElementById('publications-list');
+          
+          if (publications.length === 0) {
+              container.innerHTML = '<p>No publications found.</p>';
+              return;
+          }
 
-            container.innerHTML = publications.map(pub => `
-                <div class="publication-card">
-                    <div class="publication-image">
-                        <!-- Using picture_path field from BibTeX; replace with actual image path if needed -->
-                        <img src="${pub.fields.picture_path || 'placeholder.png'}" alt="Publication Image">
-                    </div>
-                    <div class="publication-content">
-                        <h2><a href="${pub.fields.url || '#'}" target="_blank">${pub.fields.title || 'Unknown Title'}</a></h2>
-                        <p>${pub.fields.author || 'Unknown Authors'}</p>
-                        <p class="metadata">${pub.fields.journal || pub.fields.booktitle || 'Unknown Source'} - ${pub.fields.year || 'Unknown Year'}</p>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Fetch and display publications on page load
-        fetchPublications();
+          container.innerHTML = publications.map(pub => `
+              <div class="publication-card">
+                  <div class="publication-image">
+                      <!-- Using picture_path field from BibTeX; replace with actual image path if needed -->
+                      <img src="${pub.fields.picture_path || 'placeholder.png'}" alt="Publication Image">
+                  </div>
+                  <div class="publication-content">
+                      <h2><a href="${pub.fields.url || '#'}" target="_blank">${pub.fields.title || 'Unknown Title'}</a></h2>
+                      <p>${pub.fields.author || 'Unknown Authors'}</p>
+                      <p class="metadata">${pub.fields.journal || pub.fields.booktitle || 'Unknown Source'} - ${pub.fields.year || 'Unknown Year'}</p>
+                  </div>
+              </div>
+          `).join('');
+      }
+      // Fetch and display publications on page load
+      fetchPublications();
     </script>
-
+    </div>
     </section>
-    <!-- Services Section -->
-    <section id="services" class="services section">
+
+<!-- Projects Section -->
+    <!-- <section id="projects" class="services section">
 
       <!-- Section Title -->
+       <!--
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
-
+      </div>-->
+      <!--
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
               <div class="icon">
@@ -466,82 +308,13 @@
               </a>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
+          </div>
         </div>
-
       </div>
-
-    </section>
-
-
+    </section> -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
@@ -552,27 +325,6 @@
 
         <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
           <div class="row gy-5">
-
-            <!-- <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-            </div>End Info Item -->
-
-            <!-- <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div>
-            </div>End Info Item -->
-
             <div class="col-lg-4">
               <div class="info-item d-flex align-items-center">
                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -582,40 +334,8 @@
                 </div>
               </div>
             </div><!-- End Info Item -->
-
           </div>
         </div>
-
-        <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form><!-- End Contact Form -->
-
       </div> 
 
     </section><!-- /Contact Section -->
