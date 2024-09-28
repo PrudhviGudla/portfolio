@@ -874,11 +874,10 @@ section,
   color: #fff; /* Text color on hover */
   text-decoration: none; /* Remove underline on hover */
 }
-
 /*--------------------------------------------------------------
 # Publications Section
 --------------------------------------------------------------*/
-#publications-list {
+.publications-list {
   width: 90%;
   max-width: 5000px; /* Allow the container to be larger */
   margin: 50px auto; /* Center the publications list container */
