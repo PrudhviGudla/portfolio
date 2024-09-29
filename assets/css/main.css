@@ -1792,6 +1792,20 @@ section,
   transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
+.social-links svg {
+  width: 24px; /* Adjust size */
+  height: 24px; /* Adjust size */
+  fill: #fff; /* ORCID green color */
+  margin-top: -2px; /* Align with other icons */
+  transition: transform 0.3s ease;
+}
+
+.social-links svg:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  color: #0073e6; /* Change color on hover */
+}
+
+
 
 /*--------------------------------------------------------------
 # Starter Section Section

@@ -1,11 +1,3 @@
-/**
-* Template Name: DevFolio
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -247,5 +239,70 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  async function fetchPublications() {
+    try {
+        // Fetch the BibTeX file
+        const response = await fetch('assets/pub.bib');
+        // Check if the response is ok
+        if (!response.ok) {
+            throw new Error(`Failed to load pub.bib: ${response.status} ${response.statusText}`);
+        }
+        // Get the text from the response
+        const bibtex = await response.text();
+        // Log the raw bibtex content for debugging
+        console.log('BibTeX content:', bibtex);
+        // Parse and display publications
+        const publications = parseBibTeX(bibtex);
+        displayPublications(publications);
+    } catch (error) {
+        // Log detailed error message
+        console.error('Error fetching or parsing publications:', error.message);
+        document.getElementById('publications-list').innerText = `Failed to load publications: ${error.message}`;
+    }
+  }
+
+  function parseBibTeX(bibtex) {
+      const entries = [];
+      const entryRegex = /@.*?{(.*?),([\s\S]*?)}\s*$/gm;
+      let match;
+
+      while ((match = entryRegex.exec(bibtex)) !== null) {
+          const entry = { id: match[1].trim(), fields: {} };
+          const fields = match[2].trim().split(/,\s*\n/);
+
+          for (let field of fields) {
+              const [key, value] = field.split('=');
+              if (key && value) {
+                  entry.fields[key.trim()] = value.replace(/[{}"]/g, '').trim();
+              }
+          }
+          entries.push(entry);
+      }
+      return entries;
+  }
+
+  function displayPublications(publications) {
+      const container = document.getElementById('publications-list');
+      if (publications.length === 0) {
+          container.innerHTML = '<p>No publications found.</p>';
+          return;
+      }
+      container.innerHTML = publications.map(pub => `
+          <div class="publication-card">
+              <div class="publication-image">
+                  <!-- Using picture_path field from BibTeX; replace with actual image path if needed -->
+                  <img src="${pub.fields.picture_path || 'placeholder.png'}" alt="Publication Image">
+              </div>
+              <div class="publication-content">
+                  <h2><a href="${pub.fields.url || '#'}" target="_blank">${pub.fields.title || 'Unknown Title'}</a></h2>
+                  <p>${pub.fields.author || 'Unknown Authors'}</p>
+                  <p class="metadata">${pub.fields.journal || pub.fields.booktitle || 'Unknown Source'} - ${pub.fields.year || 'Unknown Year'}</p>
+              </div>
+          </div>
+      `).join('');
+  }
+// Fetch and display publications on page load
+fetchPublications();
 
 })();
