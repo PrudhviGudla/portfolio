@@ -1766,6 +1766,33 @@ section,
   color: var(--accent-color);
 }
 
+/* Style for social icons in the footer */
+.social-links a {
+  display: inline-block;
+  margin: 0 10px; /* Space between icons */
+  color: #fff; /* Default icon color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Add hover effect for icons */
+.social-links a:hover {
+  color: #0073e6; /* Change color on hover */
+}
+
+/* Style for the PNG icon */
+.social-links img {
+  width: 24px; /* Set width of the icon */
+  height: 24px; /* Set height of the icon */
+  margin-top: -2px; /* Adjust vertical alignment */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-links img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
