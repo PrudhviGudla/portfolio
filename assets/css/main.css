@@ -1002,6 +1002,112 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
+.services .service-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 18px;
+  border-bottom: 5px solid var(--surface-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services .project-image {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.services .project-image img {
+  max-width: 95%; /* Reduced from 100% to 95% */
+  max-height: 95%; /* Reduced from 100% to 95% */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.services .service-item:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.services .service-item h3 {
+  font-weight: 700;
+  margin: 0 0 10px 0; /* Reduced bottom margin */
+  font-size: 24px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .service-item .project-status {
+  font-size: 16px;
+  color: #4CAF50; /* Green color for 'Ongoing' status */
+  margin: 0 0 15px 0;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.services .service-item p {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.services .project-link {
+  margin-top: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.services .btn-project {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.services .btn-project:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+@media (min-width: 1365px) {
+  .services .service-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+  }
+
+  .services .service-item:hover h3 {
+    color: var(--accent-color);
+  }
+}
+
+/* Adjust the column width for larger screens */
+@media (min-width: 992px) {
+  .services .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Further adjust for extra-large screens */
+@media (min-width: 1200px) {
+  .services .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+/*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
