@@ -1010,7 +1010,7 @@ section,
   padding: 40px;
   transition: all ease-in-out 0.3s;
   border-radius: 18px;
-  border-bottom: 5px solid var(--surface-color);
+  /* border: 0.1px solid #0073e6; Add thin blue border */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1918,4 +1918,82 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Research Interests Section
+--------------------------------------------------------------*/
+.research-interests .interest-item {
+  padding: 30px;
+  background: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.research-interests .interest-item .icon {
+  width: 64px;
+  height: 64px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.research-interests .interest-item .icon i {
+  color: var(--contrast-color);
+  font-size: 28px;
+  line-height: 0;
+}
+
+.research-interests .interest-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.research-interests .interest-item h3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: var(--accent-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.research-interests .interest-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.research-interests .interest-item:hover {
+  transform: translateY(-10px);
+}
+
+.research-interests .interest-item:hover .icon {
+  background: var(--contrast-color);
+}
+
+.research-interests .interest-item:hover .icon i {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .research-interests .interest-item {
+    margin-bottom: 30px;
+  }
 }
