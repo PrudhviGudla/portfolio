@@ -15,7 +15,7 @@ function setCookie(name, value, days) {
 
 // Function to load Google Analytics
 function loadGoogleAnalytics() {
-  const GOOGLE_ANALYTICS_ID = 'PLACEHOLDER_GA_ID';
+  const GOOGLE_ANALYTICS_ID = 'G-XRGJL8ZEDG';
 
   const script = document.createElement('script');
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`;
