@@ -112,7 +112,7 @@
 
   /**
    * Animate the skills items on reveal
-   */
+   
   let skillsAnimation = document.querySelectorAll('.skills-animation');
   skillsAnimation.forEach((item) => {
     new Waypoint({
@@ -126,7 +126,7 @@
       }
     });
   });
-
+*/
   /**
    * Initiate Pure Counter
    */
@@ -170,15 +170,6 @@
       }, false);
     });
 
-  });
-
-  /**
-   * Frequently Asked Questions Toggle
-   */
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-    faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
-    });
   });
 
   /**
@@ -262,6 +253,9 @@
     }
   }
 
+  /*---------------------------------------------------------------
+  # load publications
+  -----------------------------------------------------------------*/
   function parseBibTeX(bibtex) {
       const entries = [];
       const entryRegex = /@.*?{(.*?),([\s\S]*?)}\s*$/gm;
@@ -295,7 +289,7 @@
                   <img src="${pub.fields.picture_path || 'placeholder.png'}" alt="Publication Image">
               </div>
               <div class="publication-content">
-                  <h3><a href="${pub.fields.url || '#'}" target="_blank">${pub.fields.title || 'Unknown Title'}</a></h3>
+                  <h3 class="publication-title text-center"><a href="${pub.fields.url || '#'}" target="_blank">${pub.fields.title || 'Unknown Title'}</a></h3>
                   <p class="authors">${pub.fields.author || 'Unknown Authors'}</p>
                   <p class="metadata">${pub.fields.journal || pub.fields.booktitle || 'Unknown Source'} - ${pub.fields.year || 'Unknown Year'}</p>
               </div>

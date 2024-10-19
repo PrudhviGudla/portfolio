@@ -113,7 +113,6 @@
           </div>
         </div>
       </div>
-
     </section><!-- /About Section -->
 
     <!-- Resume Section -->
@@ -126,13 +125,15 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Academic Service Experience</h3>
+            
+            <!--<h3 class="resume-title">Academic Service Experience</h3>
 
             <div class="resume-item pb-0">
               <h4>Reviewer, ICLR 2025</h4>
               <h5>Sept 2024 - Present</h5>
               <p>Review research papers for one of the leading conferences in machine learning and artificial intelligence</p>
-            </div><!-- Edn Resume Item -->
+            </div>-->
+            <!-- Edn Resume Item -->
 
             <h3 class="resume-title">Experience</h3>
             <div class="resume-item">
@@ -212,57 +213,15 @@
     </section>
 
 <!--Projects Section -->
-<section id="projects" class="services section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Projects</h2>
-  </div><!-- End Section Title -->
-
+<section id="projects" class="projects">
   <div class="container">
-    <div class="row gy-4">
+    <div class="section-title">
+      <h2>Projects</h2>
+      <p>Check out some of my recent projects</p>
+    </div>
 
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item position-relative">
-          <div class="project-image">
-            <img src="assets/img/proj/cbl.png" alt="Project 1" class="project-image">
-          </div>
-          <h3>CBL (CBOR, Bitmap, List)</h3>
-          <p>Created a Python library to facilitate efficient encoding and decoding of JSON-LD data using our novel compression algorithm called CBL</p>
-          <div class="project-link">
-            <a href="https://gitlab.com/coswot/cbl" class="btn-project" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div><!-- End Project Item -->
-
-
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-item position-relative">
-          <div class="project-image">
-            <img src="assets/img/proj/VWE2.png" alt="Volumetric Weight Estimation">
-          </div>
-          <h3>Volumetric Weight Estimation</h3>
-          <p>Implemented a system for accurate volumetric weight estimation using advanced computer vision techniques</p>
-          <div class="project-link">
-            <a href="assets/pdfs/VWE_Report.pdf" class="btn-project" target="_blank">View Project PDF</a>
-          </div>
-        </div>
-      </div><!-- End Project Item -->
-
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item position-relative">
-          <div class="project-image">
-            <img src="assets/img/proj/LTS_Testbed.jpg" alt="SteelEye - Ladle Tracking System">
-          </div>
-          <h3>SteelEye - Ladle Tracking System</h3>
-          <h4 class="project-status">Ongoing</h4>
-          <p>Developed an end-to-end Ladle Tracking System that automates ladle number detection in steel plants using a fine-tuned YOLOv8 model</p>
-          <!-- <div class="project-link">
-            <a href="#" class="btn-project">View Project</a>
-          </div> -->
-        </div>
-      </div><!-- End Project Item -->
-
-      <!-- Add more project items as needed -->
-
+    <div id="projects-container" class="row">
+      <!-- Project cards will be dynamically inserted here -->
     </div>
   </div>
 </section><!-- End Projects Section -->
@@ -394,6 +353,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
 
 </body>
 
