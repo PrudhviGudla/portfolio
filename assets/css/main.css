@@ -931,6 +931,7 @@ section,
   display: flex;
   flex-direction: column;
   border-bottom: 5px solid transparent; /* Add this line */
+  /* align-items: center; */
 }
 
 .projects .project-item:hover {
@@ -989,6 +990,7 @@ section,
   line-height: 1.6;
   font-size: 16px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .projects .project-link {
