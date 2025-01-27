@@ -24,6 +24,8 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Add Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -51,7 +53,8 @@
           <li><a href="#resume">Resume</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#projects">Projects</a></li>
-          <!-- <li><a href="#research-interests">Research Interests</a></li> -->
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#research-interests">Research Interests</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -104,7 +107,7 @@
             <div class="about-me">
               <h4>About me</h4>
               <p>
-                I am an aspiring undergraduate researcher from the Indian Institute of Technology Kharagpur interested in AI, Robotics, and IoT. As the Project Lead for Steel Eye, I developed a real-time ladle tracking system for steel plants and led a team to the national finals of the Smart India Hackathon 2023. I’ve contributed to research with publications in areas like Entity Augmentation in Vertical Federated Learning and Data Compression for the Constrained Web of Things.
+                I am an aspiring undergraduate researcher from the Indian Institute of Technology Kharagpur interested in AI, Robotics, and IoT. As the Project Lead for Steel Eye, I developed a real-time ladle tracking system for steel plants and led a team to the national finals of the Smart India Hackathon 2023. I've contributed to research with publications in areas like Entity Augmentation in Vertical Federated Learning and Data Compression for the Constrained Web of Things.
               </p>
               <p>
                 I am an enterprising engineer with a strong passion for continuous learning. I actively explore emerging technologies by reading research papers, and blogs, and staying updated on advancements in IoT, reinforcement learning, robotics, computer vision, and brain-computer interfaces (BCI). My drive to learn and adapt enables me to bring innovative solutions to the projects I lead and collaborate on.
@@ -225,68 +228,105 @@
   </div>
 </section><!-- End Projects Section -->
 
-<!--Research Interests Section -->
-<!--
+<!-- Achievements Section-->
+<section id="achievements" class="achievements">
+  <div class="container">
+    <div class="section-title">
+      <h2>Achievements</h2>
+      <!-- <p>Check out some of my recent projects</p> -->
+    </div>
+
+    <div id="achievements-container" class="row">
+      <!-- Project cards will be dynamically inserted here -->
+    </div>
+  </div>
+  <!-- {
+    "title": "Reviewer at ICLR2025",
+    "image": "assets/img/ach_imgs/ICLR2025.jpg",
+    "status": "",
+    "description": "Nominated as a Reviewer for the International Conference on Learning Representations 2025.",
+    "showButton": false,
+    "buttonText": ""
+  }, -->
+  
+</section><!-- End Projects Section -->
+
+<!-- Research Interests Section -->
 <section id="research-interests" class="research-interests section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Research Interests</h2>
+    <p>Areas that drive my passion for innovation and discovery</p>
   </div>
 
   <div class="container">
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="interest-item">
-          <div class="icon"><i class="bi bi-robot"></i></div>
-          <h3>Federated Learning</h3>
-          <p>Exploring advanced AI algorithms and their applications in solving complex real-world problems.</p>
+          <div class="icon"><i class="bi bi-camera"></i></div>
+          <h3>Computer Vision</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="interest-item">
-          <div class="icon"><i class="bi bi-cpu"></i></div>
-          <h3>Machine Learning</h3>
-          <p>Developing novel machine learning models for improved prediction and decision-making capabilities.</p>
+          <div class="icon"><i class="bi bi-robot"></i></div>
+          <h3>Robotics</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="interest-item">
-          <div class="icon"><i class="bi bi-camera-reels"></i></div>
-          <h3>Computer Vision</h3>
-          <p>Advancing image and video analysis techniques for applications in autonomous systems and medical imaging.</p>
+          <div class="icon"><i class="fas fa-atom"></i></div>
+          <h3>Molecular Dynamics</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
         <div class="interest-item">
           <div class="icon"><i class="bi bi-diagram-3"></i></div>
-          <h3>Natural Language Processing</h3>
-          <p>Improving language understanding and generation models for more effective human-computer interaction.</p>
+          <h3>Federated Learning</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
         <div class="interest-item">
-          <div class="icon"><i class="bi bi-cloud"></i></div>
-          <h3>Internet of Things (IoT)</h3>
-          <p>Designing efficient and secure IoT systems for smart environments and industrial applications.</p>
+          <div class="icon"><i class="bi bi-wifi"></i></div>
+          <h3>Internet of Things</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
         <div class="interest-item">
-          <div class="icon"><i class="bi bi-shield-check"></i></div>
-          <h3>Cybersecurity</h3>
-          <p>Developing robust security measures to protect AI systems and IoT networks from emerging threats.</p>
+          <div class="icon"><i class="fas fa-brain"></i></div>
+          <h3>BCI/HCI</h3>
         </div>
       </div>
+
+      <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="interest-item">
+          <div class="icon"><i class="bi bi-gear"></i></div>
+          <h3>Industrial Automation</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="interest-item">
+          <div class="icon"><i class="bi bi-cpu"></i></div>
+          <h3>GenAI</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+        <div class="interest-item">
+          <div class="icon"><i class="bi bi-hdd-network"></i></div>
+          <h3>Edge Computing</h3>
+        </div>
+      </div> -->
 
     </div>
   </div>
 </section>
--->
-<!-- End Research Interests Section-->
+
 <!-- Contact Section -->
 <section id="contact" class="contact section">
   <!-- Section Title -->
@@ -353,6 +393,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/projects.js"></script>
+  <script src="assets/js/achievements.js"></script>
 
 </body>
 

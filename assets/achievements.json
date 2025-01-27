@@ -1,0 +1,49 @@
+{
+    "achievements": [
+      {
+        "title": "Charpak Lab Scholarship",
+        "image": "assets/img/ach_imgs/charpak.png",
+        "status": "completed",
+        "description": "I was among the 35 people all over India who received the prestigious France Excellence Charpak Lab Scholarship in 2024 from the French Institute in India.",
+        "showButton": false,
+        "buttonText": "View Project Report"
+      },
+      {
+        "title": "AI4ICPS Chanakya Fellow",
+        "image": "assets/img/ach_imgs/chanakaya.png",
+        "status": "completed",
+        "description": "Received the AI4ICPS Chanakya Fellowship for building a distributed ladle tracking system for operations management in steel plants",
+        "link": "#",
+        "showButton": false,
+        "buttonText": "Learn More"
+      },
+      {
+        "title": "National Finalist | Smart India Hackathon, 2023",
+        "image": "assets/img/ach_imgs/sih.png",
+        "status": "completed",
+        "description": "Led a team to the National Finals, where we developed a tracking system for hot metal ladles in the Visakhapatnam Steel Plant",
+        "link": "#",
+        "showButton": false,
+        "buttonText": "Learn More"
+      },
+      {
+        "title": "Inter IIT Tech Meet 11.0, Kanpur, UP, 2023",
+        "image": "assets/img/ach_imgs/interiit.jpg",
+        "status": "completed",
+        "description": "Built the gold-winning prototype using a conveyor belt system, movable Depth camera, and computer vision methods such as U2NetP for volumetric weight estimation",
+        "link": "#",
+        "showButton": false,
+        "buttonText": "Learn More"
+      },
+      {
+        "title": "Global Finalist | International NeuroTechX Hackathon 2023",
+        "image": "assets/img/ach_imgs/NTX.png",
+        "status": "completed",
+        "description": "Presented our concept of developing a Brain-Computer Interface technology capable of reconstructing images from EEG signals",
+        "link": "#",
+        "showButton": false,
+        "buttonText": "Learn More"
+      }
+    ]
+  }
+

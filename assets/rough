@@ -1,0 +1,10 @@
+,
+      {
+        "title": "Speech Models for Seizure Classification through EEG",
+        "image": "assets/img/proj/EEG1.webp",
+        "status": "ongoing",
+        "description": "Fine-tuned a speech model on the Harvard Medical School - Harmful Brain Activity Classification EEG dataset, achieving 90% accuracy",
+        "link": "#",
+        "showButton": false,
+        "buttonText": "View Project"
+      }

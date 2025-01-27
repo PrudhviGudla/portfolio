@@ -931,12 +931,18 @@ section,
   display: flex;
   flex-direction: column;
   border-bottom: 5px solid transparent; /* Add this line */
+  margin-bottom: 30px; /* Add this line to create space between rows */
   /* align-items: center; */
 }
+
 
 .projects .project-item:hover {
   transform: translateY(-10px);
   border-bottom-color: var(--accent-color); /* Add this line */
+}
+
+#projects-container.row {
+  row-gap: 30px;
 }
 
 /* If you want to keep the existing hover effect for larger screens and add this new effect for all screen sizes, you can modify the existing media query like this: */
@@ -1105,6 +1111,130 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
+}
+/*--------------------------------------------------------------
+# Achievements Section
+--------------------------------------------------------------*/
+.achievements .achievement-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 18px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border-bottom: 5px solid transparent; /* Add this line */
+  /* align-items: center; */
+}
+
+.achievements .achievement-item:hover {
+  transform: translateY(-10px);
+  border-bottom-color: var(--accent-color); /* Add this line */
+}
+
+/* If you want to keep the existing hover effect for larger screens and add this new effect for all screen sizes, you can modify the existing media query like this: */
+
+@media (min-width: 1365px) {
+  .achievements .achievement-item:hover {
+    transform: translateY(-10px);
+  }
+}
+
+/* This ensures the blue bottom border appears on hover for all screen sizes, while the translateY effect only happens on larger screens */
+
+.achievements .achievement-image {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  /* margin-bottom: 15px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.achievements .achievement-image img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  /* margin-bottom: 15px */
+}
+
+.achievements .achievement-item:hover .achievement-image img {
+  transform: scale(1.05);
+}
+
+.achievements .achievement-item h3 {
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  transition: ease-in-out 0.3s;
+}
+
+.achievements .achievement-item .achievement-status {
+  font-size: 16px;
+  color: #4CAF50;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.achievements .achievement-item p {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.achievements .achievement-link {
+  margin-top: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.achievements .btn-achievement {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.achievements .btn-achievement:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+@media (min-width: 1365px) {
+  .achievements .achievement-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+  }
+
+  .achievements .achievement-item:hover h3 {
+    color: var(--accent-color);
+  }
+}
+
+/* Adjust the column width for larger screens */
+@media (min-width: 992px) {
+  .achievements .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Further adjust for extra-large screens */
+@media (min-width: 1200px) {
+  .achievements .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
 }
 
 /*--------------------------------------------------------------

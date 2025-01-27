@@ -26,6 +26,15 @@
         "link": "#",
         "showButton": false,
         "buttonText": "Learn More"
+      },
+      {
+        "title": "Smart Vision System for Quality Control",
+        "image": "assets/img/proj/SVS1.jpg",
+        "status": "ongoing",
+        "description": "Developed a goods quality tracking system with Florence2 VLM, enabling OCR-based recognition of product details and freshness index assessment of fruits and vegetables",
+        "link": "https://github.com/PrudhviGudla/Smart_Vision_System_FG",
+        "showButton": true,
+        "buttonText": "View Project"
       }
     ]
   }
