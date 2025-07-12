@@ -21,7 +21,7 @@
       {
         "title": "SteelEye - Ladle Tracking System",
         "image": "assets/img/proj/LTS_Testbed.jpg",
-        "status": "ongoing",
+        "status": "completed",
         "description": "Developed an end-to-end Ladle Tracking System that automates ladle number detection in steel plants using a fine-tuned YOLOv8 model",
         "link": "#",
         "showButton": false,
@@ -33,6 +33,33 @@
         "status": "ongoing",
         "description": "Developed a goods quality tracking system with Florence2 VLM, enabling OCR-based recognition of product details and freshness index assessment of fruits and vegetables",
         "link": "https://github.com/PrudhviGudla/Smart_Vision_System_FG",
+        "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "Machine Learning Interatomic Potentials",
+        "image": "assets/img/proj/mlip3.webp",
+        "status": "ongoing",
+        "description": "Currently developing Moment Tensor Potentials and GNN based potentials for scaling molecular dynamics simulations of radiation damage on Metallic systems such as Tungsten, GaAs and Austentite",
+        "link": "https://github.com/PrudhviGudla/mlip",
+        "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "Visual Web Agent for Autonomous Web Navigation",
+        "image": "assets/img/proj/vwa1.png",
+        "status": "ongoing",
+        "description": "Engineered a multi-stage visual AI system using LangGraph and Gemini Pro Vision to autonomously navigate web UIs",
+        "link": "https://github.com/PrudhviGudla/",
+        "showButton": false,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "Mixup-VFL: Leveraging Unaligned Data for Enhanced Regression in Vertical Federated Learning",
+        "image": "assets/img/proj/mixupvfl.png",
+        "status": "completed",
+        "description": "<br>Developed a novel Mixup based VFL pipeline for efficient regression by utilizing unaligned data across multiple clients which got accepted in HotDiML workshop, ICDCS 2025.",
+        "link": "https://github.com/sachishs-15/Mixup-VFL",
         "showButton": true,
         "buttonText": "View Project"
       }

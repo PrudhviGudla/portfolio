@@ -1399,6 +1399,68 @@ section,
   color: #0073e6; /* Change color on hover */
 }
 
+/*--------------------------------------------------------------
+# My Lab Section
+--------------------------------------------------------------*/
+.my-lab {
+  overflow: visible;
+  padding: 0; /* Remove extra padding around the section */
+}
+
+.my-lab .lab-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 18px;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+  border-bottom: 5px solid transparent;
+  max-width: 100%; /* Make the card span the full width */
+  margin: 0 auto; /* Center the card */
+}
+
+.my-lab .lab-item:hover {
+  transform: translateY(-10px);
+  border-bottom-color: var(--accent-color);
+}
+
+.my-lab .lab-image {
+  position: relative;
+  overflow: visible;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.my-lab .lab-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 10px; /* Add rounded corners to the image */
+}
+
+.my-lab .lab-item:hover .lab-image img {
+  transform: scale(1.05);
+}
+
+.my-lab .lab-content {
+  text-align: center;
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.my-lab .lab-content h3 {
+  font-size: 28px; /* Slightly larger font for the title */
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--heading-color);
+}
+
+.my-lab .lab-content p {
+  font-size: 18px; /* Slightly larger font for the description */
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
 
 
 
