@@ -64,11 +64,20 @@
         "buttonText": "View Project"
       },
       {
-        "title": "Mixup-VFL: Leveraging Unaligned Data for Enhanced Regression in Vertical Federated Learning",
+        "title": "Mixup-VFL: Leveraging Unaligned Data for Regression in VFL",
         "image": "assets/img/proj/mixupvfl.png",
         "status": "completed",
         "description": "<br>Developed a novel Mixup based VFL pipeline for efficient regression by utilizing unaligned data across multiple clients which got accepted in HotDiML workshop, ICDCS 2025.",
         "link": "https://github.com/sachishs-15/Mixup-VFL",
+        "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "Perimeter Breach Detection and Crowd Analytics",
+        "image": "assets/img/proj/PBDCA1.png",
+        "status": "completed",
+        "description": "<br>A real-time computer vision system using YOLOv8 for intelligent perimeter breach detection and crowd analytics, featuring a FastAPI web interface and MQTT integration for hardware alerts.",
+        "link": "https://github.com/PrudhviGudla/Perimeter-Breach-Detection-and-Crowd-Analytics",
         "showButton": true,
         "buttonText": "View Project"
       }
