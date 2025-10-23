@@ -25,12 +25,21 @@
         "description": "Developed an end-to-end Ladle Tracking System that automates ladle number detection in steel plants using a fine-tuned YOLOv8 model",
         "link": "#",
         "showButton": false,
-        "buttonText": "Learn More"
+        "buttonText": "View Project"
+      },
+      {
+        "title": "CLIP-CPE: Zero Shot Defect Classification",
+        "image": "assets/img/proj/clipcpe1.webp",
+        "status": "completed",
+        "description": "Implemented a zero-shot defect classification pipeline with CLIP model and Compositional Prompt Ensemble technique, achieving 64.5% accuracy on MVTec AD hazelnut dataset through two-stage binary and multi-class classification",
+        "link": "https://github.com/PrudhviGudla/CLIP-CPE-Zero-Shot-Defect-Classification",
+        "showButton": true,
+        "buttonText": "View Project"
       },
       {
         "title": "Smart Vision System for Quality Control",
         "image": "assets/img/proj/SVS1.jpg",
-        "status": "ongoing",
+        "status": "completed",
         "description": "Developed a goods quality tracking system with Florence2 VLM, enabling OCR-based recognition of product details and freshness index assessment of fruits and vegetables",
         "link": "https://github.com/PrudhviGudla/Smart_Vision_System_FG",
         "showButton": true,
@@ -39,8 +48,8 @@
       {
         "title": "Machine Learning Interatomic Potentials",
         "image": "assets/img/proj/mlip3.webp",
-        "status": "ongoing",
-        "description": "Currently developing Moment Tensor Potentials and GNN based potentials for scaling molecular dynamics simulations of radiation damage on Metallic systems such as Tungsten, GaAs and Austentite",
+        "status": "completed",
+        "description": "Developed a Moment Tensor Potential for scalable molecular dynamics simulations of Tungsten and Gallium Arsenide",
         "link": "https://github.com/PrudhviGudla/mlip",
         "showButton": true,
         "buttonText": "View Project"
@@ -48,10 +57,10 @@
       {
         "title": "Visual Web Agent for Autonomous Web Navigation",
         "image": "assets/img/proj/vwa1.png",
-        "status": "ongoing",
+        "status": "completed",
         "description": "Engineered a multi-stage visual AI system using LangGraph and Gemini Pro Vision to autonomously navigate web UIs",
-        "link": "https://github.com/PrudhviGudla/",
-        "showButton": false,
+        "link": "https://github.com/PrudhviGudla/Visual-Web-Agent",
+        "showButton": true,
         "buttonText": "View Project"
       },
       {
