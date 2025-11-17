@@ -23,8 +23,8 @@
         "image": "assets/img/proj/LTS_Testbed.jpg",
         "status": "completed",
         "description": "Developed an end-to-end Ladle Tracking System that automates ladle number detection in steel plants using a fine-tuned YOLOv8 model",
-        "link": "#",
-        "showButton": false,
+        "link": "https://prudhvigudla.github.io/steeleye/",
+        "showButton": true,
         "buttonText": "View Project"
       },
       {
@@ -41,7 +41,7 @@
         "image": "assets/img/proj/SVS1.jpg",
         "status": "completed",
         "description": "Developed a goods quality tracking system with Florence2 VLM, enabling OCR-based recognition of product details and freshness index assessment of fruits and vegetables",
-        "link": "https://github.com/PrudhviGudla/Smart_Vision_System_FG",
+        "link": "https://github.com/PrudhviGudla/Smart_Vision_System",
         "showButton": true,
         "buttonText": "View Project"
       },
@@ -78,6 +78,24 @@
         "status": "completed",
         "description": "<br>A real-time computer vision system using YOLOv8 for intelligent perimeter breach detection and crowd analytics, featuring a FastAPI web interface and MQTT integration for hardware alerts.",
         "link": "https://github.com/PrudhviGudla/Perimeter-Breach-Detection-and-Crowd-Analytics",
+        "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "PaliGemma from Scratch",
+        "image": "assets/img/proj/palig1.png",
+        "status": "completed",
+        "description": "<br>Implemented Google's PaliGemma vision-language model in PyTorch, including architecture for multimodal tasks such as object detection, instance segmentation, visual question answering, and image captioning.",
+        "link": "https://github.com/PrudhviGudla/paligemma-from-scratch",
+        "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "ESP32 Home Automation via RainMaker",
+        "image": "assets/img/proj/esp32ha1.jpg",
+        "status": "completed",
+        "description": "<br>Smart home automation using ESP32, ESP RainMaker, and Google Home/Alexa. 4-channel relay control via manual switches and app with state persistence and fully commented code",
+        "link": "https://github.com/PrudhviGudla/esp32-rainmaker-relay-home-automation",
         "showButton": true,
         "buttonText": "View Project"
       }
