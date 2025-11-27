@@ -58,7 +58,7 @@
         "title": "Visual Web Agent for Autonomous Web Navigation",
         "image": "assets/img/proj/vwa1.png",
         "status": "completed",
-        "description": "Engineered a multi-stage visual AI system using LangGraph and Gemini Pro Vision to autonomously navigate web UIs",
+        "description": "<br>Engineered a multi-stage visual AI system using LangGraph and Gemini Pro Vision to autonomously navigate web UIs",
         "link": "https://github.com/PrudhviGudla/Visual-Web-Agent",
         "showButton": true,
         "buttonText": "View Project"
@@ -94,8 +94,17 @@
         "title": "ESP32 Home Automation via RainMaker",
         "image": "assets/img/proj/esp32ha1.jpg",
         "status": "completed",
-        "description": "<br>Smart home automation using ESP32, ESP RainMaker, and Google Home/Alexa. 4-channel relay control via manual switches and app with state persistence and fully commented code",
+        "description": "Smart home automation using ESP32, ESP RainMaker, and Google Home/Alexa. 4-channel relay control via manual switches and app with state persistence and fully commented code",
         "link": "https://github.com/PrudhviGudla/esp32-rainmaker-relay-home-automation",
+        "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "n8n T2SQL Agent Workflow",
+        "image": "assets/img/proj/n8nT2SQL1.png",
+        "status": "completed",
+        "description": "<br>A self-healing Text-to-SQL AI Agent featuring autonomous syntax correction, read-only security guardrails, and dynamic schema grounding using n8n and PostgreSQL.",
+        "link": "https://github.com/PrudhviGudla/n8n-workflows",
         "showButton": true,
         "buttonText": "View Project"
       }
