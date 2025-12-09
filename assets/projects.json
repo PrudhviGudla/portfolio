@@ -1,24 +1,6 @@
 {
     "projects": [
       {
-        "title": "CBL<br>(CBOR, Bitmap, List)",
-        "image": "assets/img/proj/cbl.png",
-        "status": "completed",
-        "description": "Created a Python library to facilitate efficient encoding and decoding of JSON-LD data using our novel compression algorithm called CBL",
-        "link": "https://gitlab.com/coswot/cbl",
-        "showButton": true,
-        "buttonText": "View Project"
-      },
-      {
-        "title": "Volumetric Weight Estimation",
-        "image": "assets/img/proj/VWE2.png",
-        "status": "completed",
-        "description": "Implemented a system for accurate volumetric weight estimation using advanced computer vision techniques",
-        "link": "assets/pdfs/VWE_Report.pdf",
-        "showButton": true,
-        "buttonText": "View Project Report"
-      },
-      {
         "title": "SteelEye - Ladle Tracking System",
         "image": "assets/img/proj/LTS_Testbed.jpg",
         "status": "completed",
@@ -37,20 +19,20 @@
         "buttonText": "View Project"
       },
       {
-        "title": "Smart Vision System for Quality Control",
-        "image": "assets/img/proj/SVS1.jpg",
-        "status": "ongoing",
-        "description": "Developeing a goods quality tracking system with Florence2 VLM, enabling OCR-based recognition of product details and freshness index assessment of fruits and vegetables",
-        "link": "https://github.com/PrudhviGudla/Smart_Vision_System",
-        "showButton": false,
-        "buttonText": "View Project"
-      },
-      {
         "title": "Machine Learning Interatomic Potentials",
         "image": "assets/img/proj/mlip3.webp",
         "status": "completed",
         "description": "Developed a Moment Tensor Potential for scalable molecular dynamics simulations of Tungsten and Gallium Arsenide",
         "link": "https://github.com/PrudhviGudla/mlip",
+        "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "GNN vs. XGBoost: Molecular Property Prediction",
+        "image": "assets/img/proj/mlip3.webp",
+        "status": "completed",
+        "description": "Designed a modular benchmarking framework comparing Graph Neural Networks (GNNs) against XGBoost for molecular property prediction on the QM9 dataset, utilizing PyTorch Geometric and MLflow, demonstrating GINE's superior performance (R2 = 0.999) on energy target",
+        "link": "https://github.com/PrudhviGudla/QM9-GNN-vs-XGBoost.git",
         "showButton": true,
         "buttonText": "View Project"
       },
@@ -103,9 +85,36 @@
         "title": "n8n T2SQL Agent Workflow",
         "image": "assets/img/proj/n8nT2SQL1.png",
         "status": "completed",
-        "description": "<br>A self-healing Text-to-SQL AI Agent featuring autonomous syntax correction, read-only security guardrails, and dynamic schema grounding using n8n and PostgreSQL.",
+        "description": "A self-healing Text-to-SQL AI Agent featuring autonomous syntax correction, read-only security guardrails, and dynamic schema grounding using n8n and PostgreSQL.",
         "link": "https://github.com/PrudhviGudla/n8n-workflows",
         "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "CBL<br>(CBOR, Bitmap, List)",
+        "image": "assets/img/proj/cbl.png",
+        "status": "completed",
+        "description": "Created a Python library to facilitate efficient encoding and decoding of JSON-LD data using our novel compression algorithm called CBL",
+        "link": "https://gitlab.com/coswot/cbl",
+        "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "Volumetric Weight Estimation",
+        "image": "assets/img/proj/VWE2.png",
+        "status": "completed",
+        "description": "Implemented a system for accurate volumetric weight estimation using advanced computer vision techniques",
+        "link": "assets/pdfs/VWE_Report.pdf",
+        "showButton": true,
+        "buttonText": "View Project Report"
+      },
+            {
+        "title": "Smart Vision System for Quality Control",
+        "image": "assets/img/proj/SVS1.jpg",
+        "status": "ongoing",
+        "description": "Developeing a goods quality tracking system with Florence2 VLM, enabling OCR-based recognition of product details and freshness index assessment of fruits and vegetables",
+        "link": "https://github.com/PrudhviGudla/Smart_Vision_System",
+        "showButton": false,
         "buttonText": "View Project"
       }
     ]
