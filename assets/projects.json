@@ -22,14 +22,14 @@
         "title": "Machine Learning Interatomic Potentials",
         "image": "assets/img/proj/mlip3.webp",
         "status": "completed",
-        "description": "Developed a Moment Tensor Potential for scalable molecular dynamics simulations of Tungsten and Gallium Arsenide",
+        "description": "Developed an end-to-end Machine Learning Interatomic Potential (MTP) pipeline for Tungsten and GaAs to accelerate molecular dynamics simulations, achieving Bulk Moduli predictions within 18% of experimental benchmarks",
         "link": "https://github.com/PrudhviGudla/mlip",
         "showButton": true,
         "buttonText": "View Project"
       },
       {
         "title": "GNN vs. XGBoost: Molecular Property Prediction",
-        "image": "assets/img/proj/mlip3.webp",
+        "image": "assets/img/proj/gnn_xg1.png",
         "status": "completed",
         "description": "Designed a modular benchmarking framework comparing Graph Neural Networks (GNNs) against XGBoost for molecular property prediction on the QM9 dataset, utilizing PyTorch Geometric and MLflow, demonstrating GINE's superior performance (R2 = 0.999) on energy target",
         "link": "https://github.com/PrudhviGudla/QM9-GNN-vs-XGBoost.git",
