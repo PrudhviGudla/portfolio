@@ -58,7 +58,7 @@
         "title": "Perimeter Breach Detection and Crowd Analytics",
         "image": "assets/img/proj/PBDCA1.png",
         "status": "completed",
-        "description": "<br>A real-time computer vision system using YOLOv8 for intelligent perimeter breach detection and crowd analytics, featuring a FastAPI web interface and MQTT integration for hardware alerts.",
+        "description": "Designed a high concurrency backend using Apache Kafka, FastAPI and MQTT to trigger hardware alarms on breach. Accelerated YOLOv8 inference by 2.4x via TensorRT optimization, enabling low-latency for real-time breach detection",
         "link": "https://github.com/PrudhviGudla/Perimeter-Breach-Detection-and-Crowd-Analytics",
         "showButton": true,
         "buttonText": "View Project"
@@ -103,7 +103,7 @@
         "title": "Volumetric Weight Estimation",
         "image": "assets/img/proj/VWE2.png",
         "status": "completed",
-        "description": "Implemented a system for accurate volumetric weight estimation using advanced computer vision techniques",
+        "description": "Built a prototype using a conveyor belt system, movable Intel RealsenseD455 Depth camera, and computer vision methods such as U2NetP for volumetric weight estimation",
         "link": "assets/pdfs/VWE_Report.pdf",
         "showButton": true,
         "buttonText": "View Project Report"
