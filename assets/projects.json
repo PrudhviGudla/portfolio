@@ -4,7 +4,7 @@
         "title": "SteelEye - Ladle Tracking System",
         "image": "assets/img/proj/LTS_Testbed.jpg",
         "status": "completed",
-        "description": "Developed an end-to-end Ladle Tracking System that automates ladle number detection in steel plants using a fine-tuned YOLOv8 model",
+        "description": "Developed an industrial ladle tracking system utilizing fine-tuned YOLOv8 for detection in harsh environments, a real-time FastAPI and React dashboard for monitoring KPIs, and a RAG-based chatbot for natural language to SQL query generation.",
         "link": "https://prudhvigudla.github.io/steeleye/",
         "showButton": true,
         "buttonText": "View Project"
@@ -108,13 +108,22 @@
         "showButton": true,
         "buttonText": "View Project Report"
       },
-            {
-        "title": "Smart Vision System for Quality Control",
-        "image": "assets/img/proj/SVS1.jpg",
+      {
+        "title": "Deep Arithmetic Coding",
+        "image": "assets/img/proj/DAC1.png",
+        "status": "completed",
+        "description": "A Neural Arithmetic Compression framework for high entropy IoT log strings created by pairing a character-level GRU with Arithmetic Coding",
+        "link": "https://github.com/PrudhviGudla/DeepArithmeticCoding.git",
+        "showButton": true,
+        "buttonText": "View Project"
+      },
+      {
+        "title": "ProVLA: Vision Language Action Model",
+        "image": "assets/img/proj/provla1.png",
         "status": "ongoing",
-        "description": "Developeing a goods quality tracking system with Florence2 VLM, enabling OCR-based recognition of product details and freshness index assessment of fruits and vegetables",
-        "link": "https://github.com/PrudhviGudla/Smart_Vision_System",
-        "showButton": false,
+        "description": "PyTorch custom VLA model for robot control. Fuses Vision, Text & State encoder with a Diffusion Policy head for action generation",
+        "link": "https://github.com/PrudhviGudla/ProVLA",
+        "showButton": true,
         "buttonText": "View Project"
       }
     ]
